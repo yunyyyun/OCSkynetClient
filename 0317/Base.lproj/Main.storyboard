@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Koj-Dx-AQC">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mf1-Vi-s8T">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grG-20-OIl">
+                                <color key="backgroundColor" red="1" green="0.84775990820302949" blue="0.8402233147448398" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Set"/>
+                                <connections>
+                                    <action selector="setValue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lNN-JO-nBy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VtL-Jg-ppl">
+                                <frame key="frameInset" minX="229" minY="155" width="130" height="30"/>
+                                <color key="backgroundColor" red="0.93925877772850264" green="1" blue="0.83227827249742581" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Get"/>
+                                <connections>
+                                    <action selector="getValue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sJn-ZG-LKG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="mf1-Vi-s8T" secondAttribute="leading" id="DKA-fV-uCG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mf1-Vi-s8T" secondAttribute="trailing" id="Kat-m7-24V"/>
+                            <constraint firstItem="mf1-Vi-s8T" firstAttribute="top" secondItem="Koj-Dx-AQC" secondAttribute="bottom" constant="22" id="KsG-o0-OHU"/>
+                            <constraint firstItem="VtL-Jg-ppl" firstAttribute="top" secondItem="mf1-Vi-s8T" secondAttribute="bottom" constant="19" id="Llw-IZ-D20"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VtL-Jg-ppl" secondAttribute="trailing" id="PyM-2n-4LW"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="grG-20-OIl" secondAttribute="bottom" constant="482" id="S1f-Tx-HOg"/>
+                            <constraint firstItem="Koj-Dx-AQC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="34" id="XKe-LN-yxW"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Koj-Dx-AQC" secondAttribute="bottom" constant="583" id="Zz9-ar-6FK"/>
+                            <constraint firstItem="VtL-Jg-ppl" firstAttribute="width" secondItem="grG-20-OIl" secondAttribute="width" id="aOm-Io-UYe"/>
+                            <constraint firstItem="VtL-Jg-ppl" firstAttribute="leading" secondItem="grG-20-OIl" secondAttribute="trailing" constant="88" id="cmC-hi-Gie"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mf1-Vi-s8T" secondAttribute="bottom" constant="531" id="d9L-SI-Icg"/>
+                            <constraint firstItem="VtL-Jg-ppl" firstAttribute="height" secondItem="grG-20-OIl" secondAttribute="height" id="g1J-Yl-Dmj"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="grG-20-OIl" secondAttribute="leading" id="iIb-w0-Ggy"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Koj-Dx-AQC" secondAttribute="leading" id="jlx-gV-scQ"/>
+                            <constraint firstItem="grG-20-OIl" firstAttribute="top" secondItem="mf1-Vi-s8T" secondAttribute="bottom" constant="19" id="scI-1f-AdC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Koj-Dx-AQC" secondAttribute="trailing" id="zzM-Yr-Y4j"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="keyText" destination="Koj-Dx-AQC" id="roX-WN-KRW"/>
+                        <outlet property="valueText" destination="mf1-Vi-s8T" id="OJU-o3-q5T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="112.89355322338831"/>
+        </scene>
+    </scenes>
+</document>
